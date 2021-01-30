@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>hJ</title>
-    <link>https://mmjha.github.io/</link>
-    <description>Recent content on hJ</description>
+    <title>알고리즘 on hJ</title>
+    <link>https://mmjha.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+    <description>Recent content in 알고리즘 on hJ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
     <lastBuildDate>Thu, 12 Nov 2020 12:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://mmjha.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mmjha.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -25,34 +25,6 @@ X가 2로 나누어 떨어지면, 2로 나눈다.
 정수 N이 주어졌을 때, 위와 같은 연산 세 개를 적절히 사용해서 1을 만들려고 한다. 연산을 사용하는 횟수의 최솟값을 출력하시오.
  입력  첫째 줄에 1보다 크거나 같고, 106보다 작거나 같은 정수 N이 주어진다.
  출력  첫째 줄에 연산을 하는 횟수의 최솟값을 출력한다.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mmjha.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmjha.github.io/about/</guid>
-      <description>hJ
-github : github.com/mmjha</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mmjha.github.io/posts/1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmjha.github.io/posts/1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://mmjha.github.io/projects/1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://mmjha.github.io/projects/1/</guid>
-      <description></description>
     </item>
     
   </channel>

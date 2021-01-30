@@ -7,26 +7,35 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 02:01:58 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2020 12:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mmjha.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Primer</title>
-      <link>https://mmjha.github.io/tags/primer/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>DP</title>
+      <link>https://mmjha.github.io/tags/dp/</link>
+      <pubDate>Thu, 12 Nov 2020 12:00:00 +0000</pubDate>
       
-      <guid>https://mmjha.github.io/tags/primer/</guid>
+      <guid>https://mmjha.github.io/tags/dp/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>todo</title>
-      <link>https://mmjha.github.io/tags/todo/</link>
-      <pubDate>Sun, 18 Mar 2018 02:01:58 +0530</pubDate>
+      <title>백준</title>
+      <link>https://mmjha.github.io/tags/%EB%B0%B1%EC%A4%80/</link>
+      <pubDate>Thu, 12 Nov 2020 12:00:00 +0000</pubDate>
       
-      <guid>https://mmjha.github.io/tags/todo/</guid>
+      <guid>https://mmjha.github.io/tags/%EB%B0%B1%EC%A4%80/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>알고리즘</title>
+      <link>https://mmjha.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</link>
+      <pubDate>Thu, 12 Nov 2020 12:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</guid>
       <description></description>
     </item>
     

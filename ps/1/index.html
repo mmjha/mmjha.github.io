@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>[백준] 1463 - 1로 만들기 - hJ</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="[백준] 1463 - 1로 만들기">
+<meta itemprop="description" content="알고리즘 DP 문제 풀기">
+<meta itemprop="datePublished" content="2020-11-12T12:00:00+00:00" />
+<meta itemprop="dateModified" content="2020-11-12T12:00:00+00:00" />
+<meta itemprop="wordCount" content="111">
+
+
+
+<meta itemprop="keywords" content="백준,알고리즘,DP," />
+<meta property="og:title" content="[백준] 1463 - 1로 만들기" />
+<meta property="og:description" content="알고리즘 DP 문제 풀기" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://mmjha.github.io/ps/1/" />
+<meta property="article:published_time" content="2020-11-12T12:00:00+00:00" />
+<meta property="article:modified_time" content="2020-11-12T12:00:00+00:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[백준] 1463 - 1로 만들기"/>
+<meta name="twitter:description" content="알고리즘 DP 문제 풀기"/>
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" media="screen" href="https://mmjha.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://mmjha.github.io/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://mmjha.github.io/css/dark.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+		<script src="https://mmjha.github.io/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+		<div class="avatar">
+			<a href="https://mmjha.github.io/">
+				<img src="https://image.freepik.com/free-vector/young-man-head-with-beard-avatar-character_24877-36786.jpg" alt="hJ" />
+			</a>
+		</div>
+	
+	<h1 class="site-title"><a href="https://mmjha.github.io/">hJ</a></h1>
+	<div class="site-description"><p>hJ, BloG  <a href="https://github.com/mmjha">github.com/mmjha</a></p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/mmjha" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li><li><a href="#" class="scheme-toggle" id="scheme-toggle"></a></li></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/posts">Post</a>
+			</li>
+			
+			<li>
+				<a href="/projects">Project</a>
+			</li>
+			
+			<li>
+				<a href="/ps">PS</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">12</span>
+							<span class="rest">Nov 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">[백준] 1463 - 1로 만들기</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<h4 id="문제">문제</h4>
+<blockquote>
+<p>정수 X에 사용할 수 있는 연산은 다음과 같이 세 가지 이다.</p>
+</blockquote>
+<blockquote>
+<p>X가 3으로 나누어 떨어지면, 3으로 나눈다.<br>
+X가 2로 나누어 떨어지면, 2로 나눈다.<br>
+1을 뺀다.<br>
+정수 N이 주어졌을 때, 위와 같은 연산 세 개를 적절히 사용해서 1을 만들려고 한다.
+연산을 사용하는 횟수의 최솟값을 출력하시오.</p>
+</blockquote>
+<h4 id="입력">입력</h4>
+<blockquote>
+<p>첫째 줄에 1보다 크거나 같고, 106보다 작거나 같은 정수 N이 주어진다.</p>
+</blockquote>
+<h4 id="출력">출력</h4>
+<blockquote>
+<p>첫째 줄에 연산을 하는 횟수의 최솟값을 출력한다.</p>
+</blockquote>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">a = int(input())
+arr = [0] * (a+1)
+<span style="color:#00f">for</span> i <span style="color:#00f">in</span> range(1, a+1):
+	<span style="color:#00f">if</span> i == 1:
+		<span style="color:#00f">continue</span>
+
+	lis = []
+	<span style="color:#00f">if</span> i % 3 == 0:
+		lis.append(arr[i//3] + 1)
+	<span style="color:#00f">if</span> i % 2 == 0:
+		lis.append(arr[i//2] + 1)
+	lis.append(arr[i-1] + 1)
+
+	arr[i] = min(lis)
+
+<span style="color:#00f">print</span>(str(arr[a]))
+</code></pre></div>
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<a href="/tags/%EB%B0%B1%EC%A4%80" style="margin:0 0 0 0">백준</a>
+							
+							<a href="/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98" style="margin:0 0 0 0">알고리즘</a>
+							
+							<a href="/tags/dp" style="margin:0 0 0 0">DP</a>
+							
+						</ul>
+					
+				
+			</div>
+			<script src="https://utteranc.es/client.js"
+				repo="mmjha/blog-comments"
+				issue-term="pathname"
+				theme="boxy-light"
+				crossorigin="anonymous"
+				async>
+			</script>
+
+		</div>
+	</div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2021  © Copyright notice |  <a href="https://github.com/knadh/hugo-ink">Ink</a> theme on <a href="https://gohugo.io">Hugo</a></div>
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+</body>
+</html>
