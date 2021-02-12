@@ -39,5 +39,32 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Django</title>
+      <link>https://mmjha.github.io/tags/django/</link>
+      <pubDate>Thu, 13 Feb 2020 01:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/tags/django/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hj_quiz</title>
+      <link>https://mmjha.github.io/tags/hj_quiz/</link>
+      <pubDate>Thu, 13 Feb 2020 01:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/tags/hj_quiz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>postgresql</title>
+      <link>https://mmjha.github.io/tags/postgresql/</link>
+      <pubDate>Thu, 13 Feb 2020 01:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/tags/postgresql/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
