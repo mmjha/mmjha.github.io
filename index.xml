@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 12 Nov 2020 12:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mmjha.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>web서버와 DB서버 분리</title>
+      <link>https://mmjha.github.io/posts/1/</link>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/posts/1/</guid>
+      <description>목적 hj_quiz는 web과 DB가 한 서버 내에 있음.
+보안성, 확장성 등을 고려하여 DB서버를 web서버와 분리하기로 함!
+DB 서버 외부 접속 허용 OS: Ubuntu 20.10, DB: PostgreSQL 12.5
+외부 접속 허용을 위해서는 2개 파일 수정 필요함.
+2개 파일은 보통 /etc/postgresql/(version)/main(data)/ 경로에 존재함 (version등에 따라 다를 수 있음)
+ postgresql.conf postgresql.conf 파일에서 IP 허용을 위해 listen_addresses = &amp;lsquo;localhost&amp;rsquo;를 &amp;lsquo;*&amp;lsquo;로 수정  listen_addresses = &amp;#39;*&amp;#39; pg_hba.conf pg_hba.conf 파일에서 127.0.0.1/32 로 되어 있는 설정 값을 0.</description>
+    </item>
     
     <item>
       <title>[백준] 11726 - 2xn 타일링</title>
@@ -51,17 +65,6 @@ X가 2로 나누어 떨어지면, 2로 나눈다.
 정수 N이 주어졌을 때, 위와 같은 연산 세 개를 적절히 사용해서 1을 만들려고 한다. 연산을 사용하는 횟수의 최솟값을 출력하시오.
  입력  첫째 줄에 1보다 크거나 같고, 106보다 작거나 같은 정수 N이 주어진다.
  출력  첫째 줄에 연산을 하는 횟수의 최솟값을 출력한다.</description>
-    </item>
-    
-    <item>
-      <title>web서버와 DB서버 분리</title>
-      <link>https://mmjha.github.io/posts/1/</link>
-      <pubDate>Thu, 13 Feb 2020 01:00:00 +0000</pubDate>
-      
-      <guid>https://mmjha.github.io/posts/1/</guid>
-      <description>목적 hj_quiz는 web과 DB가 한 서버 내에 존재 ☆ 보안성, 확장성 등을 고려하여 DB서버를 분리!
-DB 서버 외부 접속 허용  정보 OS: Ubuntu 20.10, DB: PostgreSQL 12.5 외부 접속 허용을 위해서는 2 파일 수정 필요. 2개 파일은 보통 /etc/postgresql/(version)/main(data)/ 경로에 존재함 (version등에 따라 다를 수 있음)
-  postgresql.conf postgresql.conf 파일에서 IP 허용을 위해 listen_addresses = &amp;lsquo;localhost&amp;rsquo;를 &amp;lsquo;*&amp;lsquo;로 수정  listen_addresses = &amp;#39;*&amp;#39; pg_hba.conf pg_hba.conf 파일에서 127.0.0.1/32 로 되어 있는 설정 값을 0.</description>
     </item>
     
     <item>

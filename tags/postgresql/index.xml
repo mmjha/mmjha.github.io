@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Thu, 13 Feb 2020 01:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 13 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mmjha.github.io/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,12 +15,15 @@
     <item>
       <title>web서버와 DB서버 분리</title>
       <link>https://mmjha.github.io/posts/1/</link>
-      <pubDate>Thu, 13 Feb 2020 01:00:00 +0000</pubDate>
+      <pubDate>Sat, 13 Feb 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mmjha.github.io/posts/1/</guid>
-      <description>목적 hj_quiz는 web과 DB가 한 서버 내에 존재 ☆ 보안성, 확장성 등을 고려하여 DB서버를 분리!
-DB 서버 외부 접속 허용  정보 OS: Ubuntu 20.10, DB: PostgreSQL 12.5 외부 접속 허용을 위해서는 2 파일 수정 필요. 2개 파일은 보통 /etc/postgresql/(version)/main(data)/ 경로에 존재함 (version등에 따라 다를 수 있음)
-  postgresql.conf postgresql.conf 파일에서 IP 허용을 위해 listen_addresses = &amp;lsquo;localhost&amp;rsquo;를 &amp;lsquo;*&amp;lsquo;로 수정  listen_addresses = &amp;#39;*&amp;#39; pg_hba.conf pg_hba.conf 파일에서 127.0.0.1/32 로 되어 있는 설정 값을 0.</description>
+      <description>목적 hj_quiz는 web과 DB가 한 서버 내에 있음.
+보안성, 확장성 등을 고려하여 DB서버를 web서버와 분리하기로 함!
+DB 서버 외부 접속 허용 OS: Ubuntu 20.10, DB: PostgreSQL 12.5
+외부 접속 허용을 위해서는 2개 파일 수정 필요함.
+2개 파일은 보통 /etc/postgresql/(version)/main(data)/ 경로에 존재함 (version등에 따라 다를 수 있음)
+ postgresql.conf postgresql.conf 파일에서 IP 허용을 위해 listen_addresses = &amp;lsquo;localhost&amp;rsquo;를 &amp;lsquo;*&amp;lsquo;로 수정  listen_addresses = &amp;#39;*&amp;#39; pg_hba.conf pg_hba.conf 파일에서 127.0.0.1/32 로 되어 있는 설정 값을 0.</description>
     </item>
     
   </channel>

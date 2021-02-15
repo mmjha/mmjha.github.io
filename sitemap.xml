@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mmjha.github.io/tags/django/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mmjha.github.io/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mmjha.github.io/tags/hj_quiz/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mmjha.github.io/tags/postgresql/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mmjha.github.io/posts/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mmjha.github.io/tags/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mmjha.github.io/posts/1/</loc>
+    <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mmjha.github.io/ps/2/</loc>
     <lastmod>2020-11-12T12:00:00+00:00</lastmod>
   </url>
@@ -23,17 +58,7 @@
   </url>
   
   <url>
-    <loc>https://mmjha.github.io/</loc>
-    <lastmod>2020-11-12T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mmjha.github.io/ps/</loc>
-    <lastmod>2020-11-12T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mmjha.github.io/tags/</loc>
     <lastmod>2020-11-12T12:00:00+00:00</lastmod>
   </url>
   
@@ -45,31 +70,6 @@
   <url>
     <loc>https://mmjha.github.io/tags/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/</loc>
     <lastmod>2020-11-12T12:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mmjha.github.io/tags/django/</loc>
-    <lastmod>2020-02-13T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mmjha.github.io/tags/hj_quiz/</loc>
-    <lastmod>2020-02-13T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mmjha.github.io/tags/postgresql/</loc>
-    <lastmod>2020-02-13T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mmjha.github.io/posts/</loc>
-    <lastmod>2020-02-13T01:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://mmjha.github.io/posts/1/</loc>
-    <lastmod>2020-02-13T01:00:00+00:00</lastmod>
   </url>
   
   <url>
