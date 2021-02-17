@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RabbitMQ on hJ</title>
+    <link>https://mmjha.github.io/tags/rabbitmq/</link>
+    <description>Recent content in RabbitMQ on hJ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© Copyright notice</copyright>
+    <lastBuildDate>Wed, 17 Feb 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://mmjha.github.io/tags/rabbitmq/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RabbitMQ 설치</title>
+      <link>https://mmjha.github.io/posts/2/</link>
+      <pubDate>Wed, 17 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/posts/2/</guid>
+      <description>RabbitMQ 설치하기 rabbitmq의 공식 사이트 설치 문서 참고 https://www.rabbitmq.com/install-debian.html
+apt-get install rabbitmq-server service rabbitmq-server start rabbitmq-plugins enable rabbitmq_management rabbitmqctl add_user admin &amp;#39;password&amp;#39; rabbitmqctl set_user_tags admin administrator rabbitmqctl add_vhost qa1 rabbitmqctl set_permissions -p qa1 admin &amp;#34;.*&amp;#34; &amp;#34;.*&amp;#34; &amp;#34;.*&amp;#34; TEST web서버에서 DB서버로 접속 확인
+https://ipaddress:15672 </description>
+    </item>
+    
+  </channel>
+</rss>
