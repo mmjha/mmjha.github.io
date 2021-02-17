@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>RabbitMQ 설치 - hJ</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta itemprop="name" content="RabbitMQ 설치">
-<meta itemprop="description" content="ubuntu에 RabbitMQ 설치">
+<meta itemprop="description" content="ubuntu에 RabbitMQ 설치하기">
 <meta itemprop="datePublished" content="2021-02-17T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2021-02-17T00:00:00+00:00" />
 <meta itemprop="wordCount" content="43">
@@ -13,14 +13,14 @@
 
 <meta itemprop="keywords" content="ubuntu,RabbitMQ," />
 <meta property="og:title" content="RabbitMQ 설치" />
-<meta property="og:description" content="ubuntu에 RabbitMQ 설치" />
+<meta property="og:description" content="ubuntu에 RabbitMQ 설치하기" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://mmjha.github.io/posts/2/" />
 <meta property="article:published_time" content="2021-02-17T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-02-17T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="RabbitMQ 설치"/>
-<meta name="twitter:description" content="ubuntu에 RabbitMQ 설치"/>
+<meta name="twitter:description" content="ubuntu에 RabbitMQ 설치하기"/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://mmjha.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://mmjha.github.io/css/main.css" />
@@ -90,7 +90,7 @@
 				
 				<div class="matter">
 					<h1 class="title">RabbitMQ 설치</h1>
-					<h5>ubuntu에 RabbitMQ 설치</h6>
+					<h5>ubuntu에 RabbitMQ 설치하기</h6>
 				</div>
 			</div>
 			<hr>
@@ -104,7 +104,6 @@ rabbitmqctl add_user admin &#39;password&#39;
 rabbitmqctl set_user_tags admin administrator
 rabbitmqctl add_vhost qa1
 rabbitmqctl set_permissions -p qa1 admin &#34;.*&#34; &#34;.*&#34; &#34;.*&#34;
-
 </code></pre></div><h3 id="test"><strong>TEST</strong></h3>
 <p>web서버에서 DB서버로 접속 확인</p>
 <div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">https://ipaddress:15672
