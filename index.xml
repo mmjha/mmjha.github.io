@@ -7,10 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Fri, 19 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mmjha.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>친절한 SQL 튜닝 1.1 요약 정리</title>
+      <link>https://mmjha.github.io/database/1/</link>
+      <pubDate>Tue, 23 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/database/1/</guid>
+      <description>1.1 SQL 파싱과 최적화 1.1.1 구조적, 집합적, 선언적 질의 언어
+1.1.2 SQL 최적화
+DBMS 내부에서 프로시저를 작성하고 컴파일 하여 실행 가능한 상태로 만드는 전 과정
+(1) SQL 파싱
+사용자로부터 SQL을 전달받으면 가장 먼저 SQL 파서가 파싱을 진행
+ 파싱 트리 생성 : SQL 문을 이루는 개별 구성요소를 분석해 파싱 트리 생성 Syntax 체크 : 문법 오류 확인. 사용할 수 없는 키워드, 순서 오류, 누락 키워드 체크 semantic 체크 : 의미상 오류 없는지 확인.</description>
+    </item>
     
     <item>
       <title>Celery 설치</title>
