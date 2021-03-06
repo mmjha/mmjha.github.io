@@ -7,10 +7,32 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 04 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mmjha.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Django drf ViewSet perform_, VS serializer save ??</title>
+      <link>https://mmjha.github.io/posts/5/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/posts/5/</guid>
+      <description>목적 create, update 이전, 이후에 추가로 작업을 하고 싶은데 어떡하죠&amp;hellip;?? 예시) 게시글 작성 시 작성자에 자동으로 로그인 유저를 추가하고 싶어요! -&amp;gt; perform_create 를 커스터마이징 한다.
+참고 URL : https://stackoverflow.com/questions/35283426/how-do-i-use-perform-create-to-set-a-field-automatically-in-django-rest-framewor</description>
+    </item>
+    
+    <item>
+      <title>Django prefetch_related order_by</title>
+      <link>https://mmjha.github.io/posts/4/</link>
+      <pubDate>Thu, 04 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/posts/4/</guid>
+      <description>목적 prefetch_related를 사용하였을 때 order_by가 되지 않는데 어떡하죠&amp;hellip;
+-&amp;gt; annotate를 사용한다
+ModelA.prefetch_related( Prefetch(&amp;lsquo;modelB_set&amp;rsquo;, queryset=ModelB.objects.all()) ).annotate( sort_field=Min(&amp;lsquo;modelb__sort_field&amp;rsquo;) ).order_by(&amp;lsquo;sort_field&amp;rsquo;)
+참고 url : https://stackoverflow.com/questions/52518569/django-2-0-order-a-queryset-by-a-field-on-the-prefetch-related-attribute</description>
+    </item>
     
     <item>
       <title>친절한 SQL 튜닝 1.1 요약 정리</title>
