@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright notice</copyright>
-    <lastBuildDate>Tue, 23 Feb 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 07 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://mmjha.github.io/database/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>친절한 SQL 튜닝 2.1 요약 정리</title>
+      <link>https://mmjha.github.io/database/2/</link>
+      <pubDate>Sun, 07 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mmjha.github.io/database/2/</guid>
+      <description>2.1 인덱스 구조 및 탐색 2.1.1 미리보는 인덱스 튜닝
+데이터를 찾는 두가지 방법 홍길동 찾기
+ 1학년 1반부터 6학년 맨 마지막 반까지 모두 돌기 (테이블 전체 스캔) 교무실에서 학생 명부를 조회해 학생이 있는 교실만 찾아가는 것 (인덱스 이용)  홍길동이 많다면 전자가 빠르고, 몇 안되면 후자가 빠르다
+인덱스 튜닝의 두 가지 핵심요소 인덱스는 큰 테이블에 소량 데이터를 검색할 때 사용 온라인 트랜잭션 처리 시스템에서는 소량데이터를 주로 검색하므로 인덱스 튜닝 중요</description>
+    </item>
     
     <item>
       <title>친절한 SQL 튜닝 1.1 요약 정리</title>

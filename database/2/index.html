@@ -2,25 +2,25 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Django drf ViewSet perform_, VS serializer save ?? - hJ</title><meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta itemprop="name" content="Django drf ViewSet perform_, VS serializer save ??">
-<meta itemprop="description" content="create, update 실행 전,후 추가 작업이 필요할 때?">
-<meta itemprop="datePublished" content="2021-03-04T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2021-03-04T00:00:00+00:00" />
-<meta itemprop="wordCount" content="28">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>친절한 SQL 튜닝 2.1 요약 정리 - hJ</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="친절한 SQL 튜닝 2.1 요약 정리">
+<meta itemprop="description" content="1.1 인덱스 구조 및 탐색">
+<meta itemprop="datePublished" content="2021-03-07T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-03-07T00:00:00+00:00" />
+<meta itemprop="wordCount" content="92">
 
 
 
-<meta itemprop="keywords" content="Django,postgresql,hj_quiz," />
-<meta property="og:title" content="Django drf ViewSet perform_, VS serializer save ??" />
-<meta property="og:description" content="create, update 실행 전,후 추가 작업이 필요할 때?" />
+<meta itemprop="keywords" content="database," />
+<meta property="og:title" content="친절한 SQL 튜닝 2.1 요약 정리" />
+<meta property="og:description" content="1.1 인덱스 구조 및 탐색" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://mmjha.github.io/posts/5/" />
-<meta property="article:published_time" content="2021-03-04T00:00:00+00:00" />
-<meta property="article:modified_time" content="2021-03-04T00:00:00+00:00" />
+<meta property="og:url" content="https://mmjha.github.io/database/2/" />
+<meta property="article:published_time" content="2021-03-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-03-07T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Django drf ViewSet perform_, VS serializer save ??"/>
-<meta name="twitter:description" content="create, update 실행 전,후 추가 작업이 필요할 때?"/>
+<meta name="twitter:title" content="친절한 SQL 튜닝 2.1 요약 정리"/>
+<meta name="twitter:description" content="1.1 인덱스 구조 및 탐색"/>
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" media="screen" href="https://mmjha.github.io/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://mmjha.github.io/css/main.css" />
@@ -83,23 +83,35 @@
 				
 					<div class="meta">
 						<div class="date">
-							<span class="day">04</span>
+							<span class="day">07</span>
 							<span class="rest">Mar 2021</span>
 						</div>
 					</div>
 				
 				<div class="matter">
-					<h1 class="title">Django drf ViewSet perform_, VS serializer save ??</h1>
-					<h5>create, update 실행 전,후 추가 작업이 필요할 때?</h6>
+					<h1 class="title">친절한 SQL 튜닝 2.1 요약 정리</h1>
+					<h5>1.1 인덱스 구조 및 탐색</h6>
 				</div>
 			</div>
 			<hr>
 			<div class="markdown">
-				<h3 id="목적"><strong>목적</strong></h3>
-<p>create, update 동작 시  추가 작업을 하고 싶다면?<br>
-예시) 게시글 작성 시 작성자에 자동으로 로그인 유저를 추가하고 싶어요!<br>
--&gt; perform_create 를 커스터마이징 한다.</p>
-<p>참고 URL : <a href="https://stackoverflow.com/questions/35283426/how-do-i-use-perform-create-to-set-a-field-automatically-in-django-rest-framewor">https://stackoverflow.com/questions/35283426/how-do-i-use-perform-create-to-set-a-field-automatically-in-django-rest-framewor</a></p>
+				<h3 id="21-인덱스-구조-및-탐색"><strong>2.1 인덱스 구조 및 탐색</strong></h3>
+<p><strong>2.1.1 미리보는 인덱스 튜닝</strong><br>
+데이터를 찾는 두가지 방법
+홍길동 찾기</p>
+<ol>
+<li>1학년 1반부터 6학년 맨 마지막 반까지 모두 돌기 (테이블 전체 스캔)</li>
+<li>교무실에서 학생 명부를 조회해 학생이 있는 교실만 찾아가는 것 (인덱스 이용)</li>
+</ol>
+<p><strong>홍길동이 많다면 전자가 빠르고, 몇 안되면 후자가 빠르다</strong></p>
+<p>인덱스 튜닝의 두 가지 핵심요소
+인덱스는 큰 테이블에 소량 데이터를 검색할 때 사용
+온라인 트랜잭션 처리 시스템에서는 소량데이터를 주로 검색하므로 인덱스 튜닝 중요</p>
+<p>인덱스 튜닝 2가지 방법</p>
+<ol>
+<li>인덱스 스캔 과정에서 발생하는 비효율을 줄임 = 인덱스 스캔 효율화 튜닝</li>
+<li>테이블 액세스 횟수 줄이기 = 랜덤 엑세스 최소화 튜닝</li>
+</ol>
 
 			</div>
 
@@ -108,11 +120,7 @@
 					
 						<ul class="flat">
 							
-							<a href="/tags/django" style="margin:0 0 0 0">Django</a>
-							
-							<a href="/tags/postgresql" style="margin:0 0 0 0">postgresql</a>
-							
-							<a href="/tags/hj_quiz" style="margin:0 0 0 0">hj_quiz</a>
+							<a href="/tags/database" style="margin:0 0 0 0">database</a>
 							
 						</ul>
 					
